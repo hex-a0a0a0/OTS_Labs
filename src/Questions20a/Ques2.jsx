@@ -8,7 +8,9 @@ H = [-P(MA)*lg P(MA) - P(MM)*lg P(MM) - P(AM)*lg P(AM) - P(AA)*lg P(AA)] / 2 / l
 
 Примечание: я исправил формулу, добавив пробелы и исправив некоторые ошибки в форматировании.
 </p>
-
+/*answer
+ЭНТРОПИЯ Н = 0 . 9 2 3 
+ИЗБЫТОЧНОСТЬR = 0 . 0 2 6 8*/
 export default function Quest2() {
   return (
     <div class="container flex flex-col items-center w-2/3">
