@@ -7,7 +7,8 @@ export default function Slide5(props) {
   return (
     <div class="flex flex-col items-center w-2/3 mb-4">
       <div class="font-mono text-2xl text-center">
-        Рассмотрим различные виды U1(t) и U0(t) при разных видах модуляции:
+      Чтобы закодировать исходные сообщения новым кодом, надо идти от вершины дерева к сообщениям. Если в узлах кодового дерева вы идете вверх, то в кодовую комбинацию пишется 1, а если вниз, то 0.
+      Для нашего примера получим такие кодовые комбинации: S1 - 0, S2 - 111, S3 - 110, S4 - 10.
       </div>
       <div class="flex flex-row items-center font-mono text-2xl">
         <img style="height: 300px; width: 700px; object-fit: cover;" src={binary}></img>

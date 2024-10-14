@@ -1,8 +1,8 @@
 import { createSignal, Show } from "solid-js";
-import {Quest1, Quest2, Quest3, Quest4, Quest5, Quest6, Quest7, Quest8, Quest9, Quest10, Quest11, Quest12, Quest13} from './Questions23'
-import {Slide1, Slide2, Slide3, Slide4, Slide5, Slide6, Slide7, Slide8, Slide9, Slide10, Slide11} from './Slides23'
-import Results from './Results23'
-import Laboratory from './Laboratory23'
+import {Quest1, Quest2, Quest3, Quest4, Quest5, Quest6, Quest7, Quest8, Quest9, Quest10, Quest11, Quest12, Quest13} from './Questions20b'
+import {Slide1, Slide2, Slide3, Slide4, Slide5, Slide6, Slide7, Slide8, Slide9, Slide10, Slide11} from './Slides20b'
+import Results from './Results20b'
+import Laboratory from './Laboratory20b'
 
 import Verification from './Verification'
 
@@ -18,7 +18,7 @@ function shuffleArray(array) {
    return array;
 }
 
-export default function App23() {
+export default function App20b() {
   let comps = [<Verification />];
   let slides = [<Slide1 />, <Slide2 />, <Slide3 />, <Slide4 />, <Slide5 />, <Slide6 />, <Slide7 />];
   let questions = [<Quest1 />, <Quest2 />, <Quest3 />, <Quest4 />, <Quest5 />, <Quest6 />, <Quest7 />, <Quest8 />, <Quest9 />, <Quest11 />, <Quest12 />, <Quest13 />];
