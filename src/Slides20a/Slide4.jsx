@@ -1,7 +1,7 @@
-import Bayes from '../public/BayesEq.png';
-import BayesRed from '../public/BayesEqReduced.png';
-import OneCondition from '../public/OneCondition.png';
-import ZeroCondition from '../public/ZeroCondition.png';
+import Bayes from "../public/BayesEq.png";
+import BayesRed from "../public/BayesEqReduced.png";
+import OneCondition from "../public/OneCondition.png";
+import ZeroCondition from "../public/ZeroCondition.png";
 
 export default function Slide4(props) {
   return (
@@ -10,7 +10,6 @@ export default function Slide4(props) {
         Например, кодовое дерево может иметь такой вид:
       </div>
       <img src={Bayes}></img>
-      
     </div>
-  )
+  );
 }
