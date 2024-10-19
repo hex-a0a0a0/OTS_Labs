@@ -91,7 +91,7 @@ export default function App20b() {
   };
 
   const welcomePage = () => {
-    confirm("Выйти на главную страницу?");
+    confirm("Выйти на главную страницу? Ваш прогресс не будет сохранен.");
     window.location.reload(true);
   };
 

@@ -89,7 +89,7 @@ export default function App() {
   };
 
   const welcomePage = () => {
-    if (confirm("Выйти на главную страницу?")) {
+    if (confirm("Выйти на главную страницу? Ваш прогресс не будет сохранен.")) {
       window.location.reload(true);
     }
   };
