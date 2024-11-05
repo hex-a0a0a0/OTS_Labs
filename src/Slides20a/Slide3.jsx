@@ -1,8 +1,10 @@
 export default function Slide3(props) {
   return (
     <div class="flex flex-col items-center w-2/3 mb-4">
+      <h1 class="font-mono text-4xl font-extrabold">
+        ВТОРОЙ СПОСОБ УВЕЛЕЧЕНИЯ ЭНТРОПИИ -
+      </h1>
       <div class="multiline font-mono font-normal text-2xl mt-2">
-        <span class="font-extrabold">Второй способ увеличения энтропии</span>{" "}
         состоит в том, что неравновероятные сообщения кодируются новым кодом,
         символы которого должны быть равновероятны. Это достигается, например,
         кодированием в соответствии с алгоритмом Хаффмена. Этот алгоритм состоит

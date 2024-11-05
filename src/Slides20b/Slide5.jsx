@@ -1,30 +1,31 @@
-import binary from '../public/binary_signal.png';
-import DAM from '../public/DAM.png';
-import DCHM from '../public/DCHM.png';
-import DFM from '../public/DFM.png';
+import binary from "../public/binary_signal.png";
+import DAM from "../public/DAM.png";
+import DCHM from "../public/DCHM.png";
+import DFM from "../public/DFM.png";
 
 export default function Slide5(props) {
   return (
-    <div class="flex flex-col items-center w-2/3 mb-4">
-      <div class="font-mono text-2xl text-center">
-        Рассмотрим различные виды U1(t) и U0(t) при разных видах модуляции:
+    <div class="container flex flex-col items-center w-2/3 mb-4">
+      <div class="multiline font-mono font-normal text-2xl mt-2">
+        Проигрыш в скорости передачи данных кода, исправляющего одиночные
+        ошибки, по сравнению с безызбыточным кодом равен 3. Для исправления
+        ошибок с кратностью К следует использовать коды с минимальным кодовым
+        расстоянием
+        <br></br>
+        <br />
+        r(min) = 2 * k + 1.
+        <br></br>
+        <br />
+        Для обнаружения одиночных ошибок одним из наиболее совершенных способов
+        кодирования является 'проверка на четность'. К кодовой комбинации из k
+        информационных символов добавляется один проверочный таким образом,
+        чтобы количество 1 в кодовой комбинации было четным. Например:
       </div>
-      <div class="flex flex-row items-center font-mono text-2xl">
-        <img style="height: 300px; width: 700px; object-fit: cover;" src={binary}></img>
-        <p>Исходный двоичный сигнал</p>
-      </div>
-      <div class="flex flex-row items-center font-mono text-2xl">
-        <img style="height: 300px; width: 700px; object-fit: cover;" src={DAM}></img>
-        <p>ДАМ(t): U1(t)=Um*cos(w0*t) <br/> U0(t)=0</p>
-      </div>
-      <div class="flex flex-row items-center font-mono text-2xl">
-        <img style="height: 300px; width: 700px; object-fit: cover;" src={DCHM}></img>
-        <p>ДЧМ(t): U1(t)=Um*cos(w1*t) <br/> U0(t)=Um*cos(w0*t)</p>
-      </div>
-      <div class="flex flex-row items-center font-mono text-2xl">
-        <img style="height: 300px; width: 700px; object-fit: cover;" src={DFM}></img>
-        <p>ДФМ(t): U1(t)=Um*sin(w0*t) <br/> U0(t)=-Um*sin(w0*t)</p>
+
+      <div class="multiline font-mono font-normal text-2xl mt-2">
+        Одиночная ошибка делает количество единиц в кодовой комбинации нечетным,
+        что и обнаруживается на приеме.
       </div>
     </div>
-  )
+  );
 }

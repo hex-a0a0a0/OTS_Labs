@@ -6,9 +6,9 @@ import ZeroCondition from "../public/ZeroCondition.png";
 export default function Slide4(props) {
   return (
     <div class="flex flex-col items-center w-2/3 mb-4">
-      <div class="font-mono text-2xl text-center">
+      <h1 class="font-mono text-3xl font-extrabold mb-4">
         Например, кодовое дерево может иметь такой вид:
-      </div>
+      </h1>
       <img src={Bayes}></img>
     </div>
   );

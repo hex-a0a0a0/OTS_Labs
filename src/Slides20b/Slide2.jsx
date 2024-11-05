@@ -1,19 +1,20 @@
-import prob from '../public/signal_and_noise.png';
+import prob from "../public/signal_and_noise.png";
 
 export default function Slide2(props) {
   return (
-    <div class="flex flex-col items-center w-2/3 mb-4">
-      <div class="font-mono text-2xl text-center">
-        Правило работы оптимального приемника может быть только СТАТИСТИЧЕСКИМ.
-        Поясним этот вывод. На рисунке показан процесс Z(t) на входе приемника, т.е. сигнал плюс шум:
+    <div class="container flex flex-col items-center w-2/3 mb-4">
+      <div class="multiline font-mono font-normal text-2xl mt-2">
+        Отличие одной кодовой комбинации от другой характеризуется кодовым
+        расстоянием. Кодовое расстояние — это количество позиций, в которых одна
+        кодовая комбинация отличается от другой. Например:
       </div>
-      <img style="height: 550px;" src={prob}></img>
-      <div class="font-mono text-2xl text-center">
-        Даже, если на входе приемника '1', мы не можем точно сказать, что передавалось. Может быть:
-        - передавали '1' и помеха оказалась равной '0';
-        - передавали '0' и помеха оказалась равной '1'.
-        Можно только указать вероятность, с которой процесс Z(t) получился или из '1', или из '0'.
+
+      <div class="multiline font-mono font-normal text-2xl mt-2">
+        Для обнаружения одиночных ошибок минимальное кодовое расстояние между
+        комбинациями должно равняться r(min) = 2. Например, для двоичного кода
+        (с основанием кода m=2) длиной n=3 возможный набор разрешеных комбинаций
+        с r(min)=2 имеет вид:
       </div>
     </div>
-  )
+  );
 }
