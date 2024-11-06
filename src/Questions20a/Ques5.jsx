@@ -1,22 +1,28 @@
+/*
+Вычислите значение энтропии H
+        H = ?
+        H = 0.9819
+*/
+
 import FullQuiz from "../FullQuiz.jsx";
 
 let questions = [
-  "Обеспечивающий вероятность ошибки равную 0.5",
-  "Обеспечивающий вероятность ошибки равную 1",
-  "Обеспечивающий вероятность ошибки равную 0",
-  "Обеспечивающий минимальную вероятность ошибки",
+    "Обеспечивающий вероятность ошибки равную 0.5",
+    "Обеспечивающий вероятность ошибки равную 1",
+    "Обеспечивающий вероятность ошибки равную 0",
+    "Обеспечивающий минимальную вероятность ошибки",
 ];
 let initialAnswer = 5;
 let text = "Какой приемник называется оптимальным?";
 
 export default function Quest5() {
-  return (
-    <div class="container flex flex-col items-center w-2/3">
-      <FullQuiz
-        questions={questions}
-        initialAnswer={initialAnswer}
-        text={text}
-      ></FullQuiz>
-    </div>
-  );
+    return (
+        <div class="container flex flex-col items-center w-2/3">
+            <FullQuiz
+                questions={questions}
+                initialAnswer={initialAnswer}
+                text={text}
+            ></FullQuiz>
+        </div>
+    );
 }

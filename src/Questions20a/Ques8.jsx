@@ -1,16 +1,40 @@
-import MultiFieldForm from '../MultiFieldForm.jsx'
+/*
+QUESTION:
+        Дибиты 00, 01, 10, 11 кодируются четырехпозиционной ФМ с фазами k*90 градусов 
+        (k - десятичное число, соответствующее двоичному числу дибита). 
+ANSWER:
+        Введите выражения соответсувющие передаче 00, 01, 10 и 11:
+        sinwt
+        sin(wt+90)
+        sin(wt+180)
+        sin(wt+270)
+*/
 
-import diagram from '../public/OPKot_unsign.png';
+import MultiFieldForm from "../MultiFieldForm.jsx";
 
-let options = [["Генератор U0(t)","4"], ["Первый перемножитель","2"], ["Второй перемножитель","3"], ["Первый интегратор","5"], ["Второй интегратор","6"], ["Решающее устройство","7"], ["Генератор U1(t)","1"]];
+import diagram from "../public/OPKot_unsign.png";
+
+let options = [
+    ["Генератор U0(t)", "4"],
+    ["Первый перемножитель", "2"],
+    ["Второй перемножитель", "3"],
+    ["Первый интегратор", "5"],
+    ["Второй интегратор", "6"],
+    ["Решающее устройство", "7"],
+    ["Генератор U1(t)", "1"],
+];
 
 export default function Quest8(props) {
-  return (
-    <div class="container flex flex-col items-center w-2/3">
-      <h1 class="font-mono text-4xl font-extrabold mb-4">ЗАДАНИЕ</h1>
-      <h2 class="font-mono text-2xl font-normal">Введите номера устройств, в порядке их следования в структурной схеме ОП Котельникова (для повторяющихся элементов, порядок следования - сверху вниз)</h2>
-      <img src={diagram}></img>
-      <MultiFieldForm options={options}></MultiFieldForm>
-    </div>
-  )
+    return (
+        <div class="container flex flex-col items-center w-2/3">
+            <h1 class="font-mono text-4xl font-extrabold mb-4">ЗАДАНИЕ</h1>
+            <h2 class="font-mono text-2xl font-normal">
+                Введите номера устройств, в порядке их следования в структурной
+                схеме ОП Котельникова (для повторяющихся элементов, порядок
+                следования - сверху вниз)
+            </h2>
+            <img src={diagram}></img>
+            <MultiFieldForm options={options}></MultiFieldForm>
+        </div>
+    );
 }
